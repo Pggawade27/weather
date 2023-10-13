@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const searchButton = document.getElementById("search-button");
     const searchInput = document.getElementById("search");
-    const location = document.getElementById("location");
+    const location = document.getElementById("location")
     const temperature = document.getElementById("temperature");
     const description = document.getElementById("description");
     const wind = document.getElementById("wind");
