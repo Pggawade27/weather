@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f2f2f2; */
+    background-image: url(./assets/white-cloud-blue-sky.jpg);
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.search-box{
+    margin-top: 10vh;
+}
+
+h1 {
+    color: #333;
+    margin-top: -10vh;
+}
+
+.search-box {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weather-info {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #aaa;
+    width: 20vw;
+    height: 30vh;
+}
+
+#location {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10vh;
+    font-weight: bold;
+    color: #333;
+    
+}
+
+#temperature {
+    font-size: 25px;
+    margin-top: 8vh;
+}
+
+#description {
+    font-size: 25px;
+    margin-top: 8vh;
+}
+
+#wind {
+    font-size: 25px;
+    margin-top: 8vh;
+}
+
+.parent-div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+}
+
+.img{
+    margin-top: 2vh;
+}
