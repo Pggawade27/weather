@@ -14,20 +14,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function getWeather(city) {
-        // Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
         const apiKey = "0db83138bfffc5599d46f1fcff33a2a5";
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
         fetch(apiUrl)
             .then((response) => response.json())
+            .then((searchInput.value = ""))
             .then((data) => {
                 location.textContent = "Weather in " + data.name;
                 temperature.textContent = `${(data.main.temp - 273.15).toFixed(2)}°C`;
                 description.textContent = data.weather[0].description;
                 wind.textContent = data.wind.speed + "  km/h";
+                searchButton.on
             })
             .catch((error) => {
-                console.log("Error: ", error);
+                // console.log("Error: ", error);
+                location.textContent = "Location not found"
+                temperature.textContent = "-";
+                description.textContent = "-";
+                wind.textContent = "-";
             });
+    }
+
+    searchInput.addEventListener("click", function () {
+        clearField()
+    });
+
+    function clearField(){
+        temperature.textContent = "";
+        description.textContent = "";
+        wind.textContent = "";
     }
 });

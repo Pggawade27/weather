@@ -27,6 +27,8 @@ input[type="text"] {
     width: 200px;
     border: none;
     border-radius: 5px;
+    height: 3vh;
+    margin-right: 2vh;
 }
 
 button {
@@ -36,6 +38,8 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 12vh;
+    height: 5vh;
 }
 
 .weather-info {
@@ -78,6 +82,6 @@ button {
     margin-top: 3vh;
 }
 
-.img{
-    margin-top: 2vh;
+h4{
+    margin-top: 0vh;
 }
